@@ -1,0 +1,11 @@
+<h2>마지막 방문 기록 : {{recent}}</h2>
+<form action=/ring method="POST">
+<a href="/">Prev</a>
+<a href="/ring">Reload</a>
+<input type="submit" name="Reset" value="reset"/>
+</form>
+<h1>방문 기록 <hr>
+{% for i in date %}
+{{i}}<br>
+{% endfor %}
+</h1>
